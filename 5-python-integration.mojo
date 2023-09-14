@@ -2,7 +2,7 @@ from python import Python
 
 fn main():
     try:
-        # import numpy as np here is below line of code
-        let np = Python.import_module("numpy")
+        let mypython = Python.import_module("pandas")
+        print(mypython.DataFrame([1,2,3,4,5]))
     except ImportError:
         print('error importing numpy')
